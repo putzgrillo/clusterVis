@@ -125,7 +125,6 @@ app_helper_3d_scatter <- function(df_plot, x_axis, y_axis, z_axis, class_variabl
 # input$clusterZ <- 'danceability'
 # input$varPlotBox <- 'valence'
 app_helper_boxplot <- function(df_plot, y_axis, class_variable) {
-  y_axis = 'energy'
   class_variable = 'Cluster'
   # adjust the data for the plot
   df_plot <- df_plot %>%
