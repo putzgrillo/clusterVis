@@ -220,9 +220,9 @@ create_cluster_app <- function(cluster_object, screen_height = '900px',
 
         # plot
         app_helper_3d_scatter(df_plot = df_plot_scatter_cluster,
-                              x_axis = input$varPlotX,
-                              y_axis = input$varPlotY,
-                              z_axis = input$varPlotZ,
+                              x_axis = input$clusterX,
+                              y_axis = input$clusterY,
+                              z_axis = input$clusterZ,
                               class_variable = 'Cluster',
                               size_variable = 'rel_freq', range_sizes = c(200, 3000))
       })
