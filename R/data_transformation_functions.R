@@ -15,7 +15,7 @@ transform_data <- function(x, variableNames, logTransform = T, rangeTransform = 
   if (is.null(variableNames)) {
     x_transform <- x
   } else {
-    x_transform <- x %>% select(contains(variableNames))
+    x_transform <- x %>% select(all_of(variableNames))
   }
   # transform and bind
   nomes <- paste(colnames(x_transform), suffix, sep = "")
